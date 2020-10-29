@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido - Préstamo de libros del CETis108</title>
+  <!-- Integración de Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Integración de FontAwesome -->
+  <link rel="stylesheet" href="../css/font-awesome.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Inicio Navbar -->
+  <nav class="navbar navbar-expand bg-dark navbar-dark">
+    <div class="container">
+      <a href="." class="navbar-brand">
+        <img class="logo-navbar" src="../images/logo-cetis108-gmail.png" alt="Logo CETis108">
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-toggle="collapse"
+        data-target="#miNavbar"
+        aria-controls="miNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miNavbar">
+        <!-- Libros, Reportes, Acerca de, Login -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Libros</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reportes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Acerca de</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fa fa-sign-in"></i>&nbsp;
+              Iniciar sesión
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin Navbar -->
+
+  <!-- Inicio de Formulario de registro de usuarios -->
+  <div class="container">
+    <form class="mt-4 mb-4" action="#" method="post">
+      <div class="form-group">
+        <label for="username">Usuario</label>
+        <input class="form-control" type="text" name="username" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="passwd">Contraseña</label>
+        <input class="form-control" type="password" name="passwd" id="passwd" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Tipo</label>
+        <select class="custom-select" name="type" id="type" required>
+          <option value="1">Administrador</option>
+          <option value="2">Bibliotecario</option>
+          <option value="3">Jefe de departamento</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nombres">Nombre(s)</label>
+        <input class="form-control" type="text" name="nombres" id="nombres" required>
+      </div>
+      <div class="form-group">
+        <label for="apellidos">Apellido(s)</label>
+        <input class="form-control" type="text" name="apellidos" id="apellidos" required>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input class="form-control" type="email" name="correo" id="correo" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Telefono</label>
+        <input class="form-control" type="number" name="telefono" id="telefono">
+      </div>
+      <button class="btn btn-primary" type="submit">Registrar</button>
+    </form>
+  </div>
+  <!-- Fin de Formulario de registro de usuarios -->
+  
+  <!-- Código Javascript -->
+  <script src="../js/jquery-3.5.1.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.js"></script>
+</body>
+</html>
