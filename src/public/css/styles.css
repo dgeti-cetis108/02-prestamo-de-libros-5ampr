@@ -1,4 +1,9 @@
 .logo-navbar {
   height: 40px;
-  filter: drop-shadow(1px 1px 1px white);
+  filter: drop-shadow(1px 1px 1px gray);
+}
+
+.form-login {
+  width: 400px;
+  margin: auto;
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido - Préstamo de libros del CETis108</title>
+  <!-- Integración de Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <!-- Integración de FontAwesome -->
+  <link rel="stylesheet" href="../css/font-awesome.css">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <!-- Inicio Navbar -->
+  <nav class="navbar navbar-expand bg-dark navbar-dark mb-4">
+    <div class="container">
+      <a href="." class="navbar-brand">
+        <img class="logo-navbar" src="../images/logo-cetis108-gmail.png" alt="Logo CETis108">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miNavbar"
+        aria-controls="miNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="miNavbar">
+        <!-- Libros, Reportes, Acerca de, Login -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Libros</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reportes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Acerca de</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fa fa-sign-in"></i>&nbsp;
+              Iniciar sesión
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin Navbar -->
+
+  <!-- Inicio de Formulario de registro de usuarios -->
+  <div class="container">
+    <div class="form-login">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="mb-0">
+            <i class="fa fa-key"></i>&nbsp;
+            Recuperación de contraseña
+          </h5>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input class="form-control" type="email" name="email" id="email" required>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">
+              <i class="fa fa-envelope"></i>&nbsp;
+              Enviar contraseña al correo
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="card mt-3 p-3 text-center">
+          <small>¿Ya tienes una cuenta? Inicia sesión <a href="#">aquí</a></small>
+      </div>
+    </div>
+  </div>
+  <!-- Fin de Formulario de registro de usuarios -->
+
+  <!-- Código Javascript -->
+  <script src="../js/jquery-3.5.1.js"></script>
+  <script src="../js/popper.js"></script>
+  <script src="../js/bootstrap.js"></script>
+</body>
+
+</html>
